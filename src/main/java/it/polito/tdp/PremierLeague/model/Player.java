@@ -3,13 +3,41 @@ package it.polito.tdp.PremierLeague.model;
 public class Player {
 	Integer playerID;
 	String name;
+	Double avg;
+	int titolarita;
 	
-	public Player(Integer playerID, String name) {
+	
+
+	public int getMinplayed() {
+		return titolarita;
+	}
+
+
+
+	public void setMinplayed(int minplayed) {
+		this.titolarita = minplayed;
+	}
+
+
+
+	public Player(Integer playerID, String name, Double avg) {
 		super();
 		this.playerID = playerID;
 		this.name = name;
+		this.avg = avg;
+	
 	}
 	
+	
+
+	public Double getAvg() {
+		return avg;
+	}
+
+	public void setAvg(Double avg) {
+		this.avg = avg;
+	}
+
 	public Integer getPlayerID() {
 		return playerID;
 	}

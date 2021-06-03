@@ -44,17 +44,17 @@ public class FXMLController {
 
     @FXML
     void doCreaGrafo(ActionEvent event) {
-
+    	model.creaGrafo(Double.parseDouble(txtGoals.getText()));
     }
 
     @FXML
     void doDreamTeam(ActionEvent event) {
-
+    	txtResult.setText(model.dreamTeam(Integer.parseInt(txtK.getText())));
     }
 
     @FXML
     void doTopPlayer(ActionEvent event) {
-
+    	txtResult.setText(model.getTopPlayer().toString());
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
